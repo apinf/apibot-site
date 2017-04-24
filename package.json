@@ -1,0 +1,34 @@
+{
+  "name": "apibot-site",
+  "version": "0.0.1",
+  "description": "Static page for apibot.ai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apinf/apibot-site.git"
+  },
+  "keywords": [
+    "api",
+    "swagger",
+    "bot",
+    "chatbot"
+  ],
+  "author": "Philippe Luickx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apinf/apibot-site/issues"
+  },
+  "homepage": "https://github.com/apinf/apibot-site#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bulma": "^0.4.1",
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,49 @@
+// https://github.com/jgthms/bulma/issues/637
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+// Set your colors
+$primary: #8c67ef;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$facebook: #4267B2;
+$facebook-invert: findColorInvert($facebook);
+$google-plus: #DB4437;
+$google-plus-invert: findColorInvert($google-plus);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    white: ($white, $black),
+    black: ($black, $white),
+    light: ($light, $light-invert),
+    dark: ($dark, $dark-invert),
+    primary: ($primary, $primary-invert),
+    info: ($info, $info-invert),
+    success: ($success, $success-invert),
+    warning: ($warning, $warning-invert),
+    danger: ($danger, $danger-invert),
+    twitter: ($twitter, $twitter-invert),
+    facebook: ($facebook, $facebook-invert),
+    google-plus: ($google-plus, $google-plus-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+
+// Use the new serif family
+$family-primary: 'Roboto';
+
+.muted {
+  color: #a2a2a2;
+  font-size: 0.8rem;
+}
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma.sass";

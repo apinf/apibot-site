@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Your API chatbot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="public/css/main.css" />
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <a class="nav-item">
+        <img src="public/img/logo.png" alt="apibot logo">
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <a class="nav-item">
+        Pricing
+      </a>
+      <a class="nav-item">
+        Contact
+      </a>
+
+      <div class="nav-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-primary">
+              <span class="icon">
+                <!-- <i class="fa fa-id-badge"></i> -->
+                <i class="fa fa-commenting-o"></i>
+              </span>
+              <span>Try it!</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="intro" class="hero is-primary is-fullheight is-bold has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Your API chatbot</h1>
+        <h2 class="subtitle is-4">Offer your developers a great Developer Experience</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+
+      <div class="columns is-vcentered">
+        <div class="column is-5">
+          <figure class="image is-4by3">
+            <img src="http://placehold.it/800x600" alt="Description">
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1">
+          <h1 class="title is-2">
+            Your chatbot on Slack
+          </h1>
+          <h2 class="subtitle is-4">
+            or Messenger, Skype, Alexa <a href="https://docs.api.ai/docs/integrations" target="_blank">or any other</a>
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="columns is-vcentered">
+        <div class="column is-5">
+          <figure class="image is-4by3">
+            <img src="http://placehold.it/800x600" alt="Description">
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1">
+          <h1 class="title is-2">
+            Conversational OpenAPI specs
+          </h1>
+          <h2 class="subtitle is-4">
+            Make your <a href="https://www.openapis.org/" target="_blank">OpenAPI</a> (fka <a href="http://swagger.io/" target="_blank">Swagger</a>) specs available through chat. No more endless scrolling through documentation.
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="columns is-vcentered">
+        <div class="column is-5">
+          <figure class="image is-4by3">
+            <img src="http://placehold.it/800x600" alt="Description">
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1">
+          <h1 class="title is-2">
+            Try it out!
+          </h1>
+          <h2 class="subtitle is-4">
+            Say hi to <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank">Borisovna</a>, our friendly Apibot! Ask her anything about Petstore or Uber APIs.
+          </h2>
+          <p class="has-text-centered">
+            <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank" class="button is-large">
+              <i class="fa fa-commenting-o"></i> Try it
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section id="pricing" class="section has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 is-offset-2">
+          <div class="box">
+            <span class="icon is-large">
+              <i class="fa fa-bicycle"></i>
+            </span>
+            <h1 class="title is-bold">Free</h1>
+            <div class="subtitle has-text-muted">1 API</div>
+            <a class="button is-primary">
+              Contact us
+            </a>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box">
+            <span class="icon is-large">
+              <i class="fa fa-space-shuttle"></i>
+            </span>
+            <h1 class="title is-bold">Unlimited</h1>
+            <div class="subtitle has-text-muted">4,99 EUR<span class="muted">/month/API</span></div>
+            <a class="button is-primary">
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+    <p class="control has-addons">
+      <form id="contactform" method="POST" action="http://formspree.io/info@apinf.io">
+        <div class="field">
+        <input class="input" type="email" placeholder="Email" name="_replyto" />
+      </div>
+        <div class="field">
+          <p class="control">
+        <textarea class="textarea" name="body" placeholder="Message (optional)"></textarea>
+      </p>
+      </div>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="//site.io/thanks.html" />
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input class="button is-primary is-pulled-right" type="submit" value="Send">
+        <!-- <button class="button is-warning is-medium" type="submit">Send</button> -->
+      </form>
+    </p>
+  </div>
+</div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+
+        <p>
+          <strong>apibot.ai</strong> by <a href="apinf.io">apinf.io</a>. The website is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/jgthms/bulma">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon" href="https://twitter.com/apibot_ai">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="icon" href="#">
+            <i class="fa fa-medium"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
