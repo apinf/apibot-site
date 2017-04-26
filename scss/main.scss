@@ -2,11 +2,14 @@
 
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/_all.sass";
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Montserrat:300,400,700');
 
 
 // Set your colors
-$primary: #8c67ef;
+$gray: #36434c;
+$gray-dark: darken(#36434c, 10%);
+$gray-invert: findColorInvert($gray);
+$primary: #f99d1c;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
@@ -40,10 +43,53 @@ $link-focus-border: $primary;
 // Use the new serif family
 $family-primary: 'Roboto';
 
+img.has-padding {
+  padding: 2rem;
+}
+
+p.has-padding {
+  padding: 0.5rem;
+}
+
+footer .icon.has-padding {
+  padding: 2rem;
+}
+
 .muted {
   color: #a2a2a2;
   font-size: 0.8rem;
 }
+
+section.is-dark {
+    background-color: $gray;
+    color: $gray-invert;
+}
+
+section.is-darker,
+footer.is-darker {
+    background-color: $gray-dark;
+    color: whitesmoke;
+}
+
+.is-dark strong,
+.is-darker strong {
+  color: white;
+}
+
+.is-dark h1 {
+  color: white;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+.hero h1.title.is-1 {
+  font-size: 4rem;
+}
+
+
 
 // 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";

@@ -13,24 +13,23 @@
   <nav class="nav">
     <div class="nav-left">
       <a class="nav-item">
-        <img src="public/img/logo.png" alt="apibot logo">
+        <img src="public/img/apibot-wide.png" alt="apibot logo">
       </a>
     </div>
 
     <div class="nav-right">
-      <a class="nav-item">
+      <a href="#pricing" class="nav-item is-hidden-mobile">
         Pricing
       </a>
-      <a class="nav-item">
+      <a href="#contact" class="nav-item is-hidden-mobile">
         Contact
       </a>
 
       <div class="nav-item">
         <div class="field is-grouped">
           <p class="control">
-            <a class="button is-primary">
+            <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank" class="button is-primary">
               <span class="icon">
-                <!-- <i class="fa fa-id-badge"></i> -->
                 <i class="fa fa-commenting-o"></i>
               </span>
               <span>Try it!</span>
@@ -43,11 +42,11 @@
 
 
 
-  <section id="intro" class="hero is-primary is-fullheight is-bold has-text-centered">
+  <section id="intro" class="hero is-dark is-fullheight is-bold has-text-centered">
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-1">Your API chatbot</h1>
-        <h2 class="subtitle is-4">Offer your developers a great Developer Experience</h2>
+        <h2 class="subtitle is-3">Offer a great Developer Experience</h2>
       </div>
     </div>
   </section>
@@ -58,7 +57,7 @@
       <div class="columns is-vcentered">
         <div class="column is-5">
           <figure class="image is-4by3">
-            <img src="http://placehold.it/800x600" alt="Description">
+            <img src="public/img/Image1Alt.png" class="has-padding" alt="Chat">
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
@@ -75,7 +74,7 @@
       <div class="columns is-vcentered">
         <div class="column is-5">
           <figure class="image is-4by3">
-            <img src="http://placehold.it/800x600" alt="Description">
+            <img src="public/img/Image2Alt.png" class="has-padding" alt="OpenAPI">
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
@@ -92,7 +91,7 @@
       <div class="columns is-vcentered">
         <div class="column is-5">
           <figure class="image is-4by3">
-            <img src="http://placehold.it/800x600" alt="Description">
+            <img src="public/img/Image3Alt.png" class="has-padding" alt="Try">
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
@@ -103,8 +102,8 @@
             Say hi to <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank">Borisovna</a>, our friendly Apibot! Ask her anything about Petstore or Uber APIs.
           </h2>
           <p class="has-text-centered">
-            <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank" class="button is-large">
-              <i class="fa fa-commenting-o"></i> Try it
+            <a href="https://apinf-bot.slack.com/messages/@apibot" target="_blank" class="button is-primary pull-right">
+              <span class="icon"><i class="fa fa-commenting-o"></i></span><span>Try it</span>
             </a>
           </p>
         </div>
@@ -124,8 +123,11 @@
               <i class="fa fa-bicycle"></i>
             </span>
             <h1 class="title is-bold">Free</h1>
-            <div class="subtitle has-text-muted">1 API</div>
-            <a class="button is-primary">
+            <div class="subtitle">1 API</div>
+            <p class="has-padding">1 chatbot for your API documentation</p>
+            <p class="has-padding">Based on OpenAPI (Swagger)</p>
+            <p class="has-padding">Slack integration</p>
+            <a class="button is-primary is-medium">
               Contact us
             </a>
           </div>
@@ -136,8 +138,12 @@
               <i class="fa fa-space-shuttle"></i>
             </span>
             <h1 class="title is-bold">Unlimited</h1>
-            <div class="subtitle has-text-muted">4,99 EUR<span class="muted">/month/API</span></div>
-            <a class="button is-primary">
+            <div class="subtitle">4,99 EUR<span class="muted">/month/API</span></div>
+            <p class="has-padding">Multiple chatbots for your API documentation</p>
+            <p class="has-padding">Based on OpenAPI (Swagger)</p>
+            <p class="has-padding">Slack, Facebook, Skype,... <a href="https://docs.api.ai/docs/integrations" target="_blank">integrations</a></p>
+            <p class="has-padding">Technical support</p>
+            <a class="button is-primary is-medium">
               Contact us
             </a>
           </div>
@@ -146,48 +152,52 @@
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section is-dark">
     <div class="container">
       <div class="columns">
         <div class="column is-8 is-offset-2">
-    <p class="control has-addons">
-      <form id="contactform" method="POST" action="http://formspree.io/info@apinf.io">
-        <div class="field">
-        <input class="input" type="email" placeholder="Email" name="_replyto" />
+          <h1 class="title">Interested?</h1>
+          <p>Leave us a message and we will contact you within 2 business days.</p>
+          <p class="control has-addons">
+            <form id="contactform" method="POST" action="http://formspree.io/info@apinf.io">
+              <div class="field">
+                <input class="input" type="email" placeholder="Email" name="_replyto" />
+              </div>
+              <div class="field">
+                <p class="control">
+                  <textarea class="textarea" name="body" placeholder="Message (optional)"></textarea>
+                </p>
+              </div>
+              <input type="text" name="_gotcha" style="display:none" />
+              <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+              <input type="hidden" name="_subject" value="New submission!" />
+              <input class="button is-primary is-pulled-right" type="submit" value="Send">
+            </form>
+          </p>
+        </div>
       </div>
-        <div class="field">
-          <p class="control">
-        <textarea class="textarea" name="body" placeholder="Message (optional)"></textarea>
-      </p>
-      </div>
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="//site.io/thanks.html" />
-        <input type="hidden" name="_subject" value="New submission!" />
-        <input class="button is-primary is-pulled-right" type="submit" value="Send">
-        <!-- <button class="button is-warning is-medium" type="submit">Send</button> -->
-      </form>
-    </p>
-  </div>
-</div>
-  </div>
+    </div>
   </section>
 
-  <footer class="footer">
+  <footer class="section is-darker footer">
     <div class="container">
-      <div class="content has-text-centered">
+      <div class="has-text-centered">
 
         <p>
           <strong>apibot.ai</strong> by <a href="apinf.io">apinf.io</a>. The website is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+          <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
         </p>
         <p>
-          <a class="icon" href="https://github.com/jgthms/bulma">
+          Powered by the <a href="https://api.ai" target="_blank">api.ai platform</a> and <a href="https://www.djangoproject.com/" target="_blank">Django</a>.
+        </p>
+        <p>
+          <a class="icon is-large has-padding" href="https://github.com/apinf/swagger-parser" target="_blank">
             <i class="fa fa-github"></i>
           </a>
-          <a class="icon" href="https://twitter.com/apibot_ai">
+          <a class="icon is-large has-padding" href="https://twitter.com/apibot_ai" target="_blank">
             <i class="fa fa-twitter"></i>
           </a>
-          <a class="icon" href="#">
+          <a class="icon is-large has-padding" href="https://medium.com/apibot" target="_blank">
             <i class="fa fa-medium"></i>
           </a>
         </p>
