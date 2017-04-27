@@ -89,7 +89,22 @@ h1 {
   font-size: 4rem;
 }
 
+.arrow-down {
+  @include arrow(white);
+  display: inline;
+  top: 45vh;
+  font-size: 2rem;
+  pointer-events: inherit;
+}
+
+.extra-margin {
+  margin: 2rem 0 1rem 0;
+}
 
 
 // 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";
+
+.title:not(:last-child), .subtitle:not(:last-child) {
+  margin-bottom: 2.5rem;
+}

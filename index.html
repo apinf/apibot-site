@@ -18,10 +18,10 @@
     </div>
 
     <div class="nav-right">
-      <a href="#pricing" class="nav-item is-hidden-mobile">
+      <a data-scroll href="#pricing" class="nav-item is-hidden-mobile">
         Pricing
       </a>
-      <a href="#contact" class="nav-item is-hidden-mobile">
+      <a data-scroll href="#contact" class="nav-item is-hidden-mobile">
         Contact
       </a>
 
@@ -47,6 +47,8 @@
       <div class="container">
         <h1 class="title is-1">Your API chatbot</h1>
         <h2 class="subtitle is-3">Offer a great Developer Experience</h2>
+
+        <a data-scroll href="#features" class="arrow-down"></a>
       </div>
     </div>
   </section>
@@ -61,7 +63,7 @@
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
-          <h1 class="title is-2">
+          <h1 class="title is-2 margin-bottom">
             Your chatbot on Slack
           </h1>
           <h2 class="subtitle is-4">
@@ -78,7 +80,7 @@
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
-          <h1 class="title is-2">
+          <h1 class="title is-2 margin-bottom">
             Conversational OpenAPI specs
           </h1>
           <h2 class="subtitle is-4">
@@ -95,7 +97,7 @@
           </figure>
         </div>
         <div class="column is-6 is-offset-1">
-          <h1 class="title is-2">
+          <h1 class="title is-2 margin-bottom">
             Try it out!
           </h1>
           <h2 class="subtitle is-4">
@@ -123,11 +125,11 @@
               <i class="fa fa-bicycle"></i>
             </span>
             <h1 class="title is-bold">Free</h1>
-            <div class="subtitle">1 API</div>
+            <div class="subtitle margin-bottom">1 API</div>
             <p class="has-padding">1 chatbot for your API documentation</p>
             <p class="has-padding">Based on OpenAPI (Swagger)</p>
             <p class="has-padding">Slack integration</p>
-            <a class="button is-primary is-medium">
+            <a data-scroll href="#contact" class="button is-primary is-medium extra-margin">
               Contact us
             </a>
           </div>
@@ -138,12 +140,12 @@
               <i class="fa fa-space-shuttle"></i>
             </span>
             <h1 class="title is-bold">Unlimited</h1>
-            <div class="subtitle">4,99 EUR<span class="muted">/month/API</span></div>
+            <div class="subtitle margin-bottom">4,99 EUR<span class="muted">/month/API</span></div>
             <p class="has-padding">Multiple chatbots for your API documentation</p>
             <p class="has-padding">Based on OpenAPI (Swagger)</p>
             <p class="has-padding">Slack, Facebook, Skype,... <a href="https://docs.api.ai/docs/integrations" target="_blank">integrations</a></p>
             <p class="has-padding">Technical support</p>
-            <a class="button is-primary is-medium">
+            <a data-scroll href="#contact" class="button is-primary is-medium extra-margin">
               Contact us
             </a>
           </div>
@@ -169,8 +171,8 @@
                 </p>
               </div>
               <input type="text" name="_gotcha" style="display:none" />
-              <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
-              <input type="hidden" name="_subject" value="New submission!" />
+              <input type="hidden" name="_next" value="thanks.html" />
+              <input type="hidden" name="_subject" value="New submission on apibot.ai!" />
               <input class="button is-primary is-pulled-right" type="submit" value="Send">
             </form>
           </p>
@@ -205,7 +207,10 @@
     </div>
   </footer>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.3.1/js/smooth-scroll.min.js" integrity="sha256-Hk3HkON5BhP8Jv4yRmMrxtmOxTc/jR2WVYH8KrxsoHw=" crossorigin="anonymous"></script>
+  <script>
+  	smoothScroll.init();
+  </script>
 </body>
 
 </html>

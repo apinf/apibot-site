@@ -41,6 +41,25 @@ h1 {
 .hero h1.title.is-1 {
   font-size: 4rem; }
 
+.arrow-down {
+  border: 1px solid white;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 0.5em;
+  pointer-events: none;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 0.5em;
+  display: inline;
+  top: 45vh;
+  font-size: 2rem;
+  pointer-events: inherit; }
+
+.extra-margin {
+  margin: 2rem 0 1rem 0; }
+
 /*! bulma.io v0.4.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -4750,3 +4769,6 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+.title:not(:last-child), .subtitle:not(:last-child) {
+  margin-bottom: 2.5rem; }
