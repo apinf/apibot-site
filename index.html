@@ -4,37 +4,39 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Your API chatbot</title>
+  <title>apibot.ai | Your API chatbot (beta)</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="public/css/main.css" />
 
 </head>
 <body>
   <nav class="nav">
-    <div class="nav-left">
-      <a class="nav-item">
-        <img src="public/img/apibot-wide.png" alt="apibot logo">
-      </a>
-    </div>
+    <div class="container">
+      <div class="nav-left">
+        <a class="nav-item">
+          <img src="public/img/apibot-wide-beta.png" alt="apibot logo">
+        </a>
+      </div>
 
-    <div class="nav-right">
-      <a data-scroll href="#pricing" class="nav-item is-hidden-mobile">
-        Pricing
-      </a>
-      <a data-scroll href="#contact" class="nav-item is-hidden-mobile">
-        Contact
-      </a>
+      <div class="nav-right">
+        <a data-scroll href="#pricing" class="nav-item is-hidden-mobile">
+          Pricing
+        </a>
+        <a data-scroll href="#contact" class="nav-item is-hidden-mobile">
+          Contact
+        </a>
 
-      <div class="nav-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a href="https://apibot-invite.herokuapp.com/" target="_blank" class="button is-primary">
-              <span class="icon">
-                <i class="fa fa-commenting-o"></i>
-              </span>
-              <span>Try it!</span>
-            </a>
-          </p>
+        <div class="nav-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a href="https://apibot-invite.herokuapp.com/" target="_blank" class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-commenting-o"></i>
+                </span>
+                <span>Try it!</span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -124,7 +126,7 @@
             <span class="icon is-large">
               <i class="fa fa-bicycle"></i>
             </span>
-            <h1 class="title is-bold">Free</h1>
+            <h1 class="title is-bold">Free <span class="muted">beta</span></h1>
             <div class="subtitle margin-bottom">1 API</div>
             <p class="has-padding">1 chatbot for your API documentation</p>
             <p class="has-padding">Based on OpenAPI (Swagger)</p>
@@ -139,9 +141,9 @@
             <span class="icon is-large">
               <i class="fa fa-space-shuttle"></i>
             </span>
-            <h1 class="title is-bold">Unlimited</h1>
+            <h1 class="title is-bold">Unlimited <span class="muted">beta</span></h1>
             <div class="subtitle margin-bottom">4,99 EUR<span class="muted">/month/API</span></div>
-            <p class="has-padding">Multiple chatbots for your API documentation</p>
+            <p class="has-padding">One chatbot for your APIs documentation</p>
             <p class="has-padding">Based on OpenAPI (Swagger)</p>
             <p class="has-padding">Slack, Facebook, Skype,... <a href="https://docs.api.ai/docs/integrations" target="_blank">integrations</a></p>
             <p class="has-padding">Technical support</p>
@@ -210,26 +212,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.3.1/js/smooth-scroll.min.js" integrity="sha256-Hk3HkON5BhP8Jv4yRmMrxtmOxTc/jR2WVYH8KrxsoHw=" crossorigin="anonymous"></script>
   <script>
   // smoothScroll
-  	smoothScroll.init();
+  smoothScroll.init();
 
   // Hotjar
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:489912,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:489912,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
   // GA
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-98399106-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-98399106-1', 'auto');
+  ga('send', 'pageview');
 
   </script>
 </body>
