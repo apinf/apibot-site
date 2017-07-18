@@ -1,6 +1,6 @@
 {
   "name": "apibot-site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Static page for apibot.ai",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "chatbot"
   ],
   "author": "APInf Oy",
-  "license": "MIT",
+  "license": "EUPL-1.1",
   "bugs": {
     "url": "https://github.com/apinf/apibot-site/issues"
   },
